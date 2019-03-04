@@ -77,3 +77,19 @@ Review:
 - Factory functions allow us to create object instances quickly and repeatedly.
 
 - There are different ways to use object de-structuring: one way is the property value shorthand and another is de-structured assignment.
+
+## CLASSES
+
+Review:
+
+- Classes are templates for objects.
+
+- Javascript calls a constructor method when we create a new instance of a class.
+
+- Inheritance is when we create a parent class with properties and methods that we can extend to child classes.
+
+- We use the extends keyword to create a subclass.
+
+- The super keyword calls the constructor() of a parent class.
+
+- Static methods are called on the class, but not on instances of the class.

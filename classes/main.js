@@ -20,6 +20,23 @@ class HospitalEmployee {
   }
 }
 
+class Doctor extends HospitalEmployee {
+  constructor(name, insurance) {
+    super(name);
+    this._insurance = insurance;
+  }
+
+  get insurance() {
+    return this._insurance;
+  }
+
+  addInsurance(newInsurance) {
+    this.insurance.push(newInsurance);
+  }
+}
+
+const doctorGrey = new Doctor('Grey', ['Empire', 'Cigna', 'Medicaid']);
+
 class Nurse extends HospitalEmployee {
   constructor(name, certifications) {
     super(name);
@@ -40,3 +57,8 @@ nurseOlynyk.takeVacationDays(5);
 console.log(nurseOlynyk.remainingVacationDays);
 nurseOlynyk.addCertification('Genetics');
 console.log(nurseOlynyk.certifications);
+
+doctorGrey.takeVacationDays(4)
+console.log(doctorGrey);
+doctorGrey.addInsurance('Medicare');
+console.log(doctorGrey.name, doctorGrey.insurance);
